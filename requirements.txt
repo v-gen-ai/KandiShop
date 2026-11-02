@@ -1,0 +1,14 @@
+torch>=2.7
+torchvision
+diffusers @ git+https://github.com/huggingface/diffusers@d7a1c31f4f85bae5a9e01cdce49bd7346bd8ccd6
+transformers==4.57.1
+accelerate
+huggingface_hub
+safetensors
+insightface
+onnxruntime-gpu
+opencv-python
+numpy<2
+pillow
+scipy
+tqdm
