@@ -88,10 +88,10 @@ python run_face.py --reference examples/faces/f3.png \
 
 One reference per person, `--reference a.png b.png c.png`. Faces in the image
 are matched to the references by ArcFace similarity, so the order does not
-matter. Here the base is generated from the prompt alone, with no references:
+matter.
 
 ```bash
-python run_face.py --reference-in-base 0 \
+python run_face.py \
   --reference examples/faces/f1.png examples/faces/f2.png examples/faces/f4.png \
   --prompt "A lush, glamorous photograph of three young women celebrating at an opulent festive dinner table in a grand candlelit hall. Two of them are seated at the table and the third stands between and slightly behind them, all three facing the camera and smiling. Seated on the left, a fair-skinned woman with long wavy copper-auburn hair, wearing an emerald-green silk evening gown with thin straps and a delicate diamond necklace. Seated on the right, a Black woman with sleek shoulder-length black hair, wearing a deep burgundy velvet off-shoulder gown and gold drop earrings. Standing in the middle, an East Asian woman with a chin-length chestnut-brown bob and side-swept bangs, wearing a shimmering champagne-gold sequined gown, raising a glass of champagne. The long table is laden with crystal glasses, golden candelabras with glowing candles, white roses and peonies, silver platters with fruit and desserts; behind them warm bokeh of fairy lights and a tall decorated Christmas tree. Rich jewel tones, warm golden candlelight, luxurious and joyful mood, photorealistic, 50mm lens, highly detailed. No text or lettering anywhere." \
   --image-size 1024x1536 --seed 1 --save-debug 1 --save out/face_group.png
